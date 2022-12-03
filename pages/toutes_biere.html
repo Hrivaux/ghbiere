@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="utf-8"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/gif" href="animated_favicon.gif"/>
+    <title>G & H - ACHAT DE BIÈRES EN LIGNE</title>
+    <link
+      rel="icon" href="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" type="image/gif"/>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,medium,100,200,300,400,500,600,700,800" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div class="livraison_offerte">
+      <div class="liv_texte">
+        ⚡ <b>Livraison offerte</b> à partir de <u>40€</u> d'achat!
+      </div>
+    </div>
+    <div class="container" id="content2">
+      <div class="lists">
+        <ul>
+          <li>
+            <a href="#" onclick="closelist()"><u>Accueil</u></a>
+          </li>
+          <li>
+            <a href="#" onclick="closelist()"
+              ><u>Nos bières par catégories</u></a
+            >
+          </li>
+          <li>
+            <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Créez un compte</u></a>
+          </li>
+          <li>
+            <a href="pages/contact.html" onclick="closelist()"><u>Contact</u></a>
+          </li>
+          <li>
+            <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Modification</u></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mark">
+        <button id="cross" onclick="closelist()">
+          <span class="m1 m"></span>
+          <span class="m2 m"></span>
+        </button>
+      </div>
+    </div>
+    <div class="btn">
+      <button id="button" onclick="openlist()">
+        <img src="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" style="width: 120px"/>
+      </button>
+      <h1 style="color: black; font-size: 20px; font-family: montserrat-medium, sans-serif; margin-left: 40px;">Menu</h1>
+    </div>
+
+    <div class="categorie">
+      <div class="categorie_btn">
+        <a class="a_categorie" href="../pages/toutes_biere.html">Bières blondes, blanches, brunes, ambrées</a>
+      </div>
+          <div class="categorie_separation"></div>
+      <div class="categorie_btn">
+        <a class="a_categorie" href="../pages/biere_international.html">Bières internationales</a>
+      </div>
+          <div class="categorie_separation"></div>
+      <div class="categorie_btn">
+        <a class="a_categorie" href="formulaire_produit.html">Produit</a>
+      </div>
+          <div class="categorie_separation"></div>
+      <div class="categorie_btn">
+        <a class="a_categorie" href="formulaire_fournisseurs.html">Fournisseur</a>
+      </div>
+      <div class="categorie_separation"></div>>
+        <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+          <a class="a_categorie" href="formulaire_commande.html">Commande</a>
+          </div>
+          <div class="categorie_separation"></div>
+      <div class="categorie_btn">
+        <a class="a_categorie" href="formulaire.inscription.html">Inscription</a>
+      </div>
+          <div class="categorie_separation"></div>
+      <div class="categorie_btn">
+         <a class="a_categorie" href="" data-toggle="modal" data-target="#loginModal">Espace membre</a>
+      </div>
+    </div>
+    <img src="https://zupimages.net/up/22/06/uwn8.png" style="position: absolute; float: left; width: 100px; margin-top: -50px;">
+    
+  </head>
+  <body>
+
+
+
+<section class="w-2/3 text-gray-600 body-font text-center">
+    <div class="container px-5 py-24 mx-auto">
+                <div class="card__text-content">
+      <h3 class=" card__title"><span style="color: #f7d706">L</span>es <span style="color: #f7d706">B</span>londes <span style="color: #f7d706"> L</span>es <span style="color: #f7d706">B</span>runes <span style="color: #f7d706">E</span>t <span style="color: #f7d706">L</span>es <span style="color: #f7d706">A</span>mbrées </h3>
+                                    <div class="card__summary" style="margin-bottom: 30px;">Retrouvez-ici les bières blondes de notre site</div>
+                </div>
+      <div class="grid grid-cols-4 gap-1 flex-wrap -m-4">
+        <div class="p-4  hugo">
+          <button class="block relative h-70 rounded overflow-hidden">
+            <img alt="" class="object-cover object-center w-full h-full block object-scale-down" src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/9fb5253bef21f30d223633ffbc64c323efba9596_19238BBO038968_1.png"/>
+          </button>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Saison 6.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              3 Monts Saison 75 cl
+            </h2>
+            <p class="mt-1">5€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img alt=""class="object-cover object-center w-full h-full block object-scale-down" src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/e886ddf2cceb5a70f1af3ae03607dfd2c16980f8_19766BBO041388_1.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Belgian Pale Ale 4.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              KASTEEL XTRA 33 CL
+            </h2>
+            <p class="mt-1">2,10€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/a3fe648cf25d7860a86ca208a48de8b26c8ec076_4661BBO032066_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Lager 5.3 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Pfungstadter Export 50 cl
+            </h2>
+            <p class="mt-1">2.00€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/6fe62407f5a8c78c85a3d14dd41a612d3140a908_17539BBO039491_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Double IPA 8.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Nice To Meet You 75 cl
+            </h2>
+            <p class="mt-1">7,95€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/a137b7850985152bf3583c165c5a80fd4e2d041e_18379ZBI041187_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde 0.3 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Pico Nova 33 cl
+            </h2>
+            <p class="mt-1">3,45€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img alt="" class="object-cover object-center w-full h-full block object-scale-down" src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/58d7ac621e78c400a03a7d464339a68757b13516_19366BCA040906_1.png"/>
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Pale Ale 5.4 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Gamma Ray 33 cl
+            </h2>
+            <p class="mt-1">2,50€</p>
+          </div>
+        </div>
+        <div class="p-4  w-full">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/images/740/740/61d2cc6530c9f_ENCART_CITATION_20216.png"
+            />
+          </a>
+          
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+                src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/6b5de498c771d1fab2f6d3cbd98deb431b9f6fe9_18777BBO039455_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Strong Ale 10 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Malheur 10 33cl
+            </h2>
+            <p class="mt-1">3,50€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/740/740/e453aa40e716811ea042590b1927cee4aa27a507_19853BMI038975.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Pils 4.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              MINI-FÛT GINETTE REFRESHING BLOND BIO 6L
+            </h2>
+            <p class="mt-1">34,90 €</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/740/740/f0b05b9ada67744523caf2c49a8fcd03fcce5b45_18565BBO038960_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Saison 6 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              SOLSTICE 33CL
+            </h2>
+            <p class="mt-1">2,80€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/d4167698810aba2c93672323a16900d23d86369e_19248BBO041575_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Saison 9.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              MUSE 75cl
+            </h2>
+            <p class="mt-1">7,50€</p>
+          </div>
+        </div>
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/126da5dfc3f6165343dd9bbc732c59866a49ded0_17872ZBI038218_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde 0.4%
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              SPORTZOT 33cl
+            </h2>
+            <p class="mt-1">3,75€</p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/817714680bfce51338567b65701d35aad492e384_18345BBO039023_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde IPA 6.5 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Ta grand-mère s'appelle Jeanine 33 cl
+            </h2>
+            <p class="mt-1">3,40€</p>
+          </div>
+        </div>
+        
+        <div class="p-4 w-full ">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/images/740/740/61d2cc842ca7a_ENCART_CITATION_20215.png"
+            />
+          </a> 
+        </div>
+        
+        <div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/4b72de24f362ab5a177452115c92979b66a4c9b5_18765BBO039058_1.png"      
+                 >   </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+            Blonde Weissbier 5.4 %
+
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+            Weihenstephaner Hefeweissbier 33 cl</h2>
+            <p class="mt-1">3,75€</p>
+          </div>
+        </div><div class="p-4 w-full hugo">
+          <a class="block relative h-70 rounded overflow-hidden">
+            <img
+              alt=""
+              class="object-cover object-center w-full h-full block object-scale-down"
+              src="https://vandb-vandb-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/335/335/c25e8bf2bf14ffe3857fb0d46e7dfd7937ea23b9_19244BBO040993_1.png"
+            />
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+              Blonde Kellerbier 5.1 %
+            </h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">
+              Krombacher Weizen 50 cl
+            </h2>
+            <p class="mt-1">4,75€</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     </section>
+     </html>

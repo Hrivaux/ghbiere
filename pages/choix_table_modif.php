@@ -1,0 +1,520 @@
+<?php
+
+$choix=$_POST["choix_table"];
+
+switch ($choix)
+{
+   case "C":
+      echo '<head>
+      <link rel="stylesheet" href="../assets/css/style.css">
+      <meta charset="utf-8"/>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <link rel="icon" type="image/gif" href="animated_favicon.gif"/>
+      <title>G & H - ACHAT DE BIÈRES EN LIGNE</title>
+      <link
+        rel="icon" href="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" type="image/gif"/>
+      <link href="http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,medium,100,200,300,400,500,600,700,800" rel="stylesheet" type="text/css"/>
+    </head>
+  
+    <body>
+      <div class="livraison_offerte">
+        <div class="liv_texte">
+          ⚡ <b>Livraison offerte</b> à partir de <u>40€</u> d\'achat!
+        </div>
+      </div>
+      <div class="container" id="content2">
+        <div class="lists">
+          <ul>
+            <li>
+              <a href="#" onclick="closelist()"><u>Accueil</u></a>
+            </li>
+            <li>
+              <a href="#" onclick="closelist()"
+                ><u>Nos bières par catégories</u></a
+              >
+            </li>
+            <li>
+              <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Créez un compte</u></a>
+            </li>
+            <li>
+              <a href="pages/contact.html" onclick="closelist()"><u>Contact</u></a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="mark">
+          <button id="cross" onclick="closelist()">
+            <span class="m1 m"></span>
+            <span class="m2 m"></span>
+          </button>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="button" onclick="openlist()">
+          <img src="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" style="width: 120px"/>
+        </button>
+        <h1 style="color: black; font-size: 20px; font-family: montserrat-medium, sans-serif; margin-left: 40px;">Menu</h1>
+      </div>
+  
+      <div class="categorie">
+        <div class="categorie_btn">
+          <a class="a_categorie" href="toutes_biere.html">Bières blondes, blanches, brunes, ambrées</a>
+        </div>
+            <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+          <a class="a_categorie" href="biere_international.html">Bières internationales</a>
+        </div>
+            <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+          <a class="a_categorie" href="formulaire_produit.html">Produit</a>
+        </div>
+            <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+          <a class="a_categorie" href="formulaire_fournisseurs.html">Fournisseur</a>
+        </div>
+        <div class="categorie_separation"></div>
+        
+          <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire_commande.html">Commande</a>
+            </div>
+            <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+          <a class="a_categorie" href="formulaire.inscription.html">Inscription</a>
+        </div>
+            <div class="categorie_separation"></div>
+        <div class="categorie_btn">
+           <a class="a_categorie" href="" data-toggle="modal" data-target="#loginModal">Espace membre</a>
+        </div>
+      </div>
+      <img src="https://zupimages.net/up/22/06/uwn8.png" style="position: absolute; float: left; width: 100px; margin-top: -50px;">
+      
+    </head>
+    <body>
+    
+    
+    <p class="text-center"></p> Veuillez saisir les informations suivantes </p>
+    <form class="text-center" action="update_commande.php" method="POST">
+        <p>ID </p><input type="text" name="id_commande" size="15" required /> <br><br>  
+        <p>Numéro utilisateur</p><input type="number" name="numero_user" size="15" /> <br><br>
+        <p>Date commande</p><input type="date" name="date_com" size="15" /> <br><br>
+        <p>Mode de payement</p><input type="text" name="Mode_paiement" size="50"/> <br><br>
+        <p></p>
+          <input type="submit" name="envoi" /> <input type="reset" >
+       
+    
+      </form>
+    
+    
+    <a href="../index.html"> Accueil</a>
+    
+    </body>' ;
+      break;
+
+    case "F";
+        echo '           <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/gif" href="animated_favicon.gif"/>
+        <title>G & H - ACHAT DE BIÈRES EN LIGNE</title>
+        <link
+          rel="icon" href="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" type="image/gif"/>
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,medium,100,200,300,400,500,600,700,800" rel="stylesheet" type="text/css"/>
+      </head>
+    
+      <body>
+        <div class="livraison_offerte">
+          <div class="liv_texte">
+            ⚡ <b>Livraison offerte</b> à partir de <u>40€</u> d\'achat!
+          </div>
+        </div>
+        <div class="container" id="content2">
+          <div class="lists">
+            <ul>
+              <li>
+                <a href="#" onclick="closelist()"><u>Accueil</u></a>
+              </li>
+              <li>
+                <a href="#" onclick="closelist()"
+                  ><u>Nos bières par catégories</u></a
+                >
+              </li>
+              <li>
+                <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Créez un compte</u></a>
+              </li>
+              <li>
+                <a href="pages/contact.html" onclick="closelist()"><u>Contact</u></a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="mark">
+            <button id="cross" onclick="closelist()">
+              <span class="m1 m"></span>
+              <span class="m2 m"></span>
+            </button>
+          </div>
+        </div>
+        <div class="btn">
+          <button id="button" onclick="openlist()">
+            <img src="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" style="width: 120px"/>
+          </button>
+          <h1 style="color: black; font-size: 20px; font-family: montserrat-medium, sans-serif; margin-left: 40px;">Menu</h1>
+        </div>
+    
+        <div class="categorie">
+          <div class="categorie_btn">
+            <a class="a_categorie" href="toutes_biere.html">Bières blondes, blanches, brunes, ambrées</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="biere_international.html">Bières internationales</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire_produit.html">Produit</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire_fournisseurs.html">Fournisseur</a>
+          </div>
+          <div class="categorie_separation"></div>
+          
+            <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="formulaire_commande.html">Commande</a>
+              </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire.inscription.html">Inscription</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+             <a class="a_categorie" href="" data-toggle="modal" data-target="#loginModal">Espace membre</a>
+          </div>
+        </div>
+        <img src="https://zupimages.net/up/22/06/uwn8.png" style="position: absolute; float: left; width: 100px; margin-top: -50px;">
+        
+      </head>
+      <body>
+      
+      
+      <p class="text-center"> Veuillez saisir les informations suivantes </p>
+      <form class="text-center" action="../pages/update_fournisseur.php" method="POST">
+           <p>ID </p><input type="number" name="id_fournisseur" size="15" required/> <br><br>  
+           <p>Votre Nom </p><input type="text" name="nom_F" size="15" /> <br><br>
+           <p>Votre Ville</p><input type="text" name="ville_F" size="15" /> <br><br>
+            <p>Votre code postal </p><input type="number" name="CP_fournisseur" size="50"/> <br><br>
+            <p>Votre adresse</p> <input type="text" name="adresse_fournisseur" /> <br><br>
+           
+            
+            <p></p>
+            <input type="submit" name="envoi" /> <input type="reset" >
+         
+      
+        </form>
+      
+      
+      
+      <a href="../index.html"> Accueil</a>
+      
+      </body>';
+        break;
+    
+    case "P";
+        echo '<head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8"/>
+        
+      </head>
+      <body>
+    
+        <!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="utf-8"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/gif" href="animated_favicon.gif"/>
+        <title>G & H - ACHAT DE BIÈRES EN LIGNE</title>
+        <link
+          rel="icon" href="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" type="image/gif"/>
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,medium,100,200,300,400,500,600,700,800" rel="stylesheet" type="text/css"/>
+      </head>
+    
+      <body>
+        <div class="livraison_offerte">
+          <div class="liv_texte">
+            ⚡ <b>Livraison offerte</b> à partir de <u>40€</u> d\'achat!
+          </div>
+        </div>
+        <div class="container" id="content2">
+          <div class="lists">
+            <ul>
+              <li>
+                <a href="#" onclick="closelist()"><u>Accueil</u></a>
+              </li>
+              <li>
+                <a href="#" onclick="closelist()"
+                  ><u>Nos bières par catégories</u></a
+                >
+              </li>
+              <li>
+                <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Créez un compte</u></a>
+              </li>
+              <li>
+                <a href="pages/contact.html" onclick="closelist()"><u>Contact</u></a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="mark">
+            <button id="cross" onclick="closelist()">
+              <span class="m1 m"></span>
+              <span class="m2 m"></span>
+            </button>
+          </div>
+        </div>
+        <div class="btn">
+          <button id="button" onclick="openlist()">
+            <img src="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" style="width: 120px"/>
+          </button>
+          <h1 style="color: black; font-size: 20px; font-family: montserrat-medium, sans-serif; margin-left: 40px;">Menu</h1>
+        </div>
+    
+        <div class="categorie">
+          <div class="categorie_btn">
+            <a class="a_categorie" href="toutes_biere.html">Bières blondes, blanches, brunes, ambrées</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="biere_international.html">Bières internationales</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire_produit.html">Produit</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire_fournisseurs.html">Fournisseur</a>
+          </div>
+          <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="contact.html">Nous contacter</a>
+            </div>
+            <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="formulaire_commande.html">Commande</a>
+              </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+            <a class="a_categorie" href="formulaire.inscription.html">Inscription</a>
+          </div>
+              <div class="categorie_separation"></div>
+          <div class="categorie_btn">
+             <a class="a_categorie" href="" data-toggle="modal" data-target="#loginModal">Espace membre</a>
+          </div>
+        </div>
+        <img src="https://zupimages.net/up/22/06/uwn8.png" style="position: absolute; float: left; width: 100px; margin-top: -50px;">
+      
+      
+      <p class="text-center"> Veuillez saisir les informations suivantes </p>
+      <form class="text-center" action="../pages/update_produit.php" method="POST">
+           <p>ID </p><input type="number" name="id_produit" size="15" required/> <br><br>  
+           <p>Quantité du produit </p><input type="number" name="qte_produit" size="15" /> <br><br>
+           <p>Nom du produit</p><input type="text" name="nom_produit" size="15" /> <br><br>
+            <p>Prix du produit </p><input type="number" name="prix_produit" size="50"/> <br><br>
+            
+            <p></p>
+            <input type="submit" name="envoi" /> <input type="reset" >
+         
+      
+        </form>
+      
+      
+      
+      <a href="../index.html"> Accueil</a>
+      
+      </body>';
+
+        break;
+
+    case "U";
+        echo '
+        
+        <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <meta charset="utf-8"/>
+        
+      </head>
+      <body>
+      
+      
+      
+        <!DOCTYPE html>
+      <html lang="fr">
+        <head>
+          <meta charset="utf-8"/>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script src="assets/js/script.js"></script>
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+          <link rel="stylesheet" href="assets/css/style.css" />
+          <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+          <!-- jQuery -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <!-- Popper JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+          <link rel="icon" type="image/gif" href="animated_favicon.gif"/>
+          <title>G & H - ACHAT DE BIÈRES EN LIGNE</title>
+          <link
+            rel="icon" href="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" type="image/gif"/>
+          <link href="http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,medium,100,200,300,400,500,600,700,800" rel="stylesheet" type="text/css"/>
+        </head>
+      
+        <body>
+          <div class="livraison_offerte">
+            <div class="liv_texte">
+              ⚡ <b>Livraison offerte</b> à partir de <u>40€</u> d\'achat!
+            </div>
+          </div>
+          <div class="container" id="content2">
+            <div class="lists">
+              <ul>
+                <li>
+                  <a href="#" onclick="closelist()"><u>Accueil</u></a>
+                </li>
+                <li>
+                  <a href="#" onclick="closelist()"
+                    ><u>Nos bières par catégories</u></a
+                  >
+                </li>
+                <li>
+                  <a href="pages/formulaire.inscription.html" onclick="closelist()"><u>Créez un compte</u></a>
+                </li>
+                <li>
+                  <a href="pages/contact.html" onclick="closelist()"><u>Contact</u></a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="mark">
+              <button id="cross" onclick="closelist()">
+                <span class="m1 m"></span>
+                <span class="m2 m"></span>
+              </button>
+            </div>
+          </div>
+          <div class="btn">
+            <button id="button" onclick="openlist()">
+              <img src="https://media3.giphy.com/media/icCnhcJhrN9eMsfkxy/200w.gif" style="width: 120px"/>
+            </button>
+            <h1 style="color: black; font-size: 20px; font-family: montserrat-medium, sans-serif; margin-left: 40px;">Menu</h1>
+          </div>
+      
+          <div class="categorie">
+            <div class="categorie_btn">
+              <a class="a_categorie" href="toutes_biere.html">Bières blondes, blanches, brunes, ambrées</a>
+            </div>
+                <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="biere_international.html">Bières internationales</a>
+            </div>
+                <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="formulaire_produit.html">Produit</a>
+            </div>
+                <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="formulaire_fournisseurs.html">Fournisseur</a>
+            </div>
+            <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="contact.html">Nous contacter</a>
+              </div>
+              <div class="categorie_separation"></div>
+              <div class="categorie_btn">
+                <a class="a_categorie" href="formulaire_commande.html">Commande</a>
+                </div>
+                <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+              <a class="a_categorie" href="formulaire.inscription.html">Inscription</a>
+            </div>
+                <div class="categorie_separation"></div>
+            <div class="categorie_btn">
+               <a class="a_categorie" href="" data-toggle="modal" data-target="#loginModal">Espace membre</a>
+            </div>
+          </div>
+          <img src="https://zupimages.net/up/22/06/uwn8.png" style="position: absolute; float: left; width: 100px; margin-top: -50px;">
+      
+      <p class="text-center"> Veuillez saisir les informations suivantes </p>
+      
+      
+      <form class="text-center" action= "../pages/update_users.php" method="POST">
+           <p>ID </p><input type="text" name="identifiant_id" size="15" /> <br><br>  
+           <p>Votre Nom </p><input type="text" name="nom" size="15" /> <br><br>
+           <p>Votre Prénom</p><input type="text" name="prenom" size="15" /> <br><br>
+            <p>Votre email </p><input type="email" name="email" size="50"/> <br><br>
+            <p>Votre identifiant</p> <input type="text" name="identifiant" /> <br><br>
+            <p>Votre mot de passe</p> <input type="password" name="mot_de_passe" /> <br><br>
+            <p>Votre age</p> <input type="date" name="age" /> <br><br>
+            <p></p>
+            <input type="submit" name="envoi"  /> <input type="reset" >
+         
+      
+        </form>
+      
+      
+      
+      <a href="../index.html"> Accueil</a>
+      
+      </body>';
+   }
+
+?>
+
+
+
